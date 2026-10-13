@@ -11,7 +11,7 @@ To add a paper to a talk, replace the `TBA` span in the paper cell:
 ```html
 <td class="paper">
   <a href="https://arxiv.org/abs/2509.01234">Title of the paper</a>
-  <span class="arxiv">arXiv:2509.01234</span>
+  <span class="authors">by Author One, Author Two</span>
 </td>
 ```
 

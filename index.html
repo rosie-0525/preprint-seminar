@@ -100,7 +100,7 @@ td.date, td.speaker{ white-space:nowrap; }
 td.date{ width:1%; }
 td.speaker{ width:1%; padding-right:1.5rem; }
 .tba{ color:var(--muted); font-style:italic; }
-.arxiv{ display:block; font-size:0.9rem; color:var(--muted); }
+.authors{ display:block; font-size:0.9rem; color:var(--muted); }
 tr.is-past td{ color:var(--muted); }
 tr.is-past a{ color:inherit; }
 tr.is-next td{ background:var(--tint); }
@@ -163,14 +163,13 @@ footer p{ margin:0; }
         </thead>
         <tbody>
           <!--
-            To fill in a talk, replace the TBA span in the paper cell with a linked title and arXiv number:
-              <td class="paper"><a href="https://arxiv.org/abs/2509.01234">Title of the paper</a><span class="arxiv">arXiv:2509.01234</span></td>
+            To fill in a talk, replace the TBA span in the paper cell with a linked title and the paper's authors:
+              <td class="paper"><a href="https://arxiv.org/abs/2509.01234">Title of the paper</a><span class="authors">by Author One, Author Two</span></td>
             The upcoming talk is highlighted automatically from the data-date attribute.
           -->
-          <tr data-date="2026-10-09"><td class="date">Oct 9</td><td class="speaker"><span class="tba">TBD</span></td><td class="paper"><span class="tba">TBA</span></td></tr>
-          <tr data-date="2026-10-16"><td class="date">Oct 16</td><td class="speaker">Minghao Zhao</td><td class="paper"><span class="tba">TBA</span></td></tr>
+          <tr data-date="2026-10-16"><td class="date">Oct 16</td><td class="speaker">Minghao Zhao</td><td class="paper"><a href="https://arxiv.org/abs/2603.04518">On the irrationality of cubic fourfolds</a><span class="authors">by Jérémy Guéré</span></td></tr>
           <tr data-date="2026-10-23"><td class="date">Oct 23</td><td class="speaker">Zhiyuan Chen</td><td class="paper"><span class="tba">TBA</span></td></tr>
-          <tr data-date="2026-10-30"><td class="date">Oct 30</td><td class="speaker">Cole Franklin</td><td class="paper"><span class="tba">TBA</span></td></tr>
+          <tr data-date="2026-10-30"><td class="date">Oct 30</td><td class="speaker">Cole Franklin</td><td class="paper"><a href="https://arxiv.org/abs/2610.10509">The rationality problem for hypersurfaces of degree at least five</a><span class="authors">by James Hotchkiss</span></td></tr>
           <tr data-date="2026-11-06"><td class="date">Nov 6</td><td class="speaker">Hikari Iwasaki</td><td class="paper"><span class="tba">TBA</span></td></tr>
           <tr data-date="2026-11-13"><td class="date">Nov 13</td><td class="speaker">Spencer Dembner</td><td class="paper"><span class="tba">TBA</span></td></tr>
           <tr data-date="2026-11-20"><td class="date">Nov 20</td><td class="speaker">Ronnie Cheng</td><td class="paper"><span class="tba">TBA</span></td></tr>
